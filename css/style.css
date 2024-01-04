@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 ul {
@@ -30,24 +29,28 @@ img {
   max-width: 100%;
 }
 
-.index--container {
+body {
+  font-family: var(--main-font);
+}
+
+.home {
   display: flex;
 }
 
-/*******************/
-/* COMIENZO HEADER */
-/*******************/
+/*****************/
+/* COMIENZO MAIN */
+/*****************/
 
-.index--main {
+.home__main {
   width: 70%;
   height: 100vh;
 }
 
-.index--main_middle {
+.home__logo {
   position: relative;
 }
 
-.index--main_middle__image {
+.home__logo__image {
   height: 60%;
   background: url(../img/groot/groot-background.jpg) no-repeat center;
   background-color: rgb(255 255 255 / 0.3);
@@ -55,7 +58,7 @@ img {
   -webkit-filter: blur(0.4rem);
 }
 
-.index--main_middle__title {
+.home__logo__title {
   width: 100%;
   font-size: 10rem;
   text-align: center;
@@ -65,19 +68,19 @@ img {
   top: 33%;
 }
 
-.index--main_nav1 {
+.home__nav1 {
   display: flex;
   justify-content: space-between;
   height: 28%;
 }
 
-.index--main_nav2 {
+.home__nav2 {
   display: flex;
   justify-content: space-between;
   height: 12%;
 }
 
-.index--main_nav__item {
+.nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,22 +88,21 @@ img {
   border: 0.1rem solid var(--light-purple);
 }
 
-.index--main_nav__item1, .index--main_nav__item4 {
+.nav__item1, .nav__item4 {
   background-color: var(--light-violet);
 }
 
-.index--main_nav__item2, .index--main_nav__item3 {
+.nav__item2, .nav__item3 {
   background-color: var(--violet);
 }
 
-.index--main_nav__item___text {
+.nav__item__text {
   font-size: 2.3rem;
   color: var(--brown);
   padding-inline: 0.5rem;
-  font-family: var(--main-font);
 }
 
-.index--main_nav__item___text-alt {
+.nav__item__text-alt {
   color: var(--light-purple);
 }
 
@@ -108,13 +110,13 @@ img {
 /* COMIENZO ASIDE */
 /******************/
 
-.index--aside {
+.home__aside {
   width: 30%;
   border: 0.1rem solid var(--light-purple);
   position: relative;
 }
 
-.index--aside_image {
+.home__aside__image {
   background: url(../img/marvel-thanos.jpg) no-repeat center;
   filter: blur(0.1rem);
   height: 100%;
