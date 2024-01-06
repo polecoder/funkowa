@@ -1,12 +1,11 @@
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500&display=swap');
 
 :root {
-  --brown: #3A3335;
-  --light-purple: #F5EFFF;
-  --purple: #CDC1FF;
-  --light-violet: #A594F9;
-  --violet: #7371FC;
+  --neutral-black: #3A3335;
+  --neutral-white: #F5EFFF;
+  --very-light-purple: #CDC1FF;
+  --light-purple: #A594F9;
+  --purple: #7371FC;
   --logo-font: 'Dancing Script', cursive;
   --main-font: 'Playfair Display', serif;
 }
@@ -33,91 +32,3 @@ body {
   font-family: var(--main-font);
 }
 
-.home {
-  display: flex;
-}
-
-/*****************/
-/* COMIENZO MAIN */
-/*****************/
-
-.home__main {
-  width: 70%;
-  height: 100vh;
-}
-
-.home__logo {
-  position: relative;
-}
-
-.home__logo__image {
-  height: 60%;
-  background: url(../img/groot/groot-background.jpg) no-repeat center;
-  background-color: rgb(255 255 255 / 0.3);
-  filter: blur(0.4rem);
-  -webkit-filter: blur(0.4rem);
-}
-
-.home__logo__title {
-  width: 100%;
-  font-size: 10rem;
-  text-align: center;
-  color: var(--light-purple);
-  font-family: var(--logo-font);
-  position: absolute;
-  top: 33%;
-}
-
-.home__nav1 {
-  display: flex;
-  justify-content: space-between;
-  height: 28%;
-}
-
-.home__nav2 {
-  display: flex;
-  justify-content: space-between;
-  height: 12%;
-}
-
-.nav__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  border: 0.1rem solid var(--light-purple);
-}
-
-.nav__item1, .nav__item4 {
-  background-color: var(--light-violet);
-}
-
-.nav__item2, .nav__item3 {
-  background-color: var(--violet);
-}
-
-.nav__item__text {
-  font-size: 2.3rem;
-  color: var(--brown);
-  padding-inline: 0.5rem;
-}
-
-.nav__item__text-alt {
-  color: var(--light-purple);
-}
-
-/******************/
-/* COMIENZO ASIDE */
-/******************/
-
-.home__aside {
-  width: 30%;
-  border: 0.1rem solid var(--light-purple);
-  position: relative;
-}
-
-.home__aside__image {
-  background: url(../img/marvel-thanos.jpg) no-repeat center;
-  filter: blur(0.1rem);
-  height: 100%;
-}
