@@ -10,6 +10,49 @@
   --main-font: 'Playfair Display', serif;
 }
 
+/*******************/
+/* BOOTSTRAP RESET */
+/*******************/
+
+/* Bootstrap Reset */
+body, figure, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, fieldset, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-size: 100%;
+  line-height: 1.15;
+  font-family: inherit;
+}
+
+button, select {
+  text-transform: none;
+}
+
+
+/************/
+/* MI RESET */
+/************/
+
 * {
   margin: 0;
   padding: 0;
@@ -31,4 +74,3 @@ img {
 body {
   font-family: var(--main-font);
 }
-
