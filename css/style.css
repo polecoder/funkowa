@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;800&display=swap');
 
 :root {
   --neutral-black: #3A3335;
   --neutral-white: #F5EFFF;
   --neutral-transparent-white: rgba(245, 239, 255, 0.2);
-  --very-light-purple: #CDC1FF;
   --light-purple: #A594F9;
-  --purple: #7371FC;
+  --light-purple-2: #CDC1FF;
+  --purple: #724CF9;
+  --purple-2: #564592;
+  --blue: #7371FC;
   --logo-font: 'Dancing Script', cursive;
   --main-font: 'Playfair Display', serif;
+  --link-font: 'Quicksand', serif;
+  --heading-font: 'Kanit', sans-serif;
   --toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28245, 239, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
@@ -75,6 +82,14 @@ img {
 body {
   font-family: var(--main-font);
   background-color: var(--neutral-white);
+  color: var(--neutral-black);
+}
+
+h2, h3 {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
 }
 
 /**************/
@@ -83,6 +98,15 @@ body {
 
 .bg-img-none {
   background-image: none;
+}
+
+.grl-button {
+  padding: 0.5rem 1rem;
+  border-radius: 1.25rem;
+  font-family: var(--link-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /**********/
@@ -125,10 +149,96 @@ body {
 
 .menu__item__link {
   color: var(--neutral-white);
+  font-family: var(--link-font);
   text-align: center;
-  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 .menu__item__link--active {
-  color: var(--very-light-purple);
+  color: var(--light-purple-2);
+}
+
+/********/
+/* HERO */
+/********/
+
+.hero {
+  position: relative;
+}
+
+.hero__bg-image {
+  height: 275px;
+  background-image: url("../img/groot/groot-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+}
+
+.hero__logo {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-inline: 1rem;
+  font-family: var(--logo-font);
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--neutral-white);
+  text-align: center;
+}
+
+.hero__content {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero__content__text {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: var(--neutral-white);
+}
+
+.hero__content__button {
+  background-color: var(--light-purple);
+  color: var(--neutral-white);
+}
+
+/**************/
+/* HP SECTION */
+/**************/
+
+.hp-section {
+  height: 250px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 1rem;
+  background-color: var(--purple-2);
+}
+
+.hp-section__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--neutral-white);
+}
+
+.hp-section__image {
+  height: 225px;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.hp-section__button {
+  background-color: var(--neutral-black);
+  color: var(--neutral-white);
 }
