@@ -3,18 +3,19 @@
 :root {
   --neutral-black: #3A3335;
   --neutral-white: #F5EFFF;
+  --neutral-transparent-white: rgba(245, 239, 255, 0.2);
   --very-light-purple: #CDC1FF;
   --light-purple: #A594F9;
   --purple: #7371FC;
   --logo-font: 'Dancing Script', cursive;
   --main-font: 'Playfair Display', serif;
+  --toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28245, 239, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
 
 /*******************/
 /* BOOTSTRAP RESET */
 /*******************/
 
-/* Bootstrap Reset */
 body, figure, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, fieldset, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -73,4 +74,61 @@ img {
 
 body {
   font-family: var(--main-font);
+  background-color: var(--neutral-white);
+}
+
+/**************/
+/* UTILIDADES */
+/**************/
+
+.bg-img-none {
+  background-image: none;
+}
+
+/**********/
+/* NAVBAR */
+/**********/
+
+.navigation {
+  background-color: var(--neutral-black);
+}
+
+.navigation__button {
+  border: none;
+  color: var(--neutral-white);
+  margin-left: 0.5rem;
+}
+
+.navigation__button--icon {
+  background-image: var(--toggler-icon);
+}
+
+.navigation__logo {
+  font-family: var(--logo-font);
+  font-size: 2rem;
+  color: var(--neutral-white);
+  margin-right: 1.5rem;
+}
+
+.navigation__menu {
+  border-top: 3px solid var(--neutral-white);
+}
+
+.menu__item:nth-child(1) {
+  border-top: none;
+}
+
+.menu__item {
+  border-top: 1px solid var(--neutral-transparent-white);
+  padding: 0.25rem 1rem;
+}
+
+.menu__item__link {
+  color: var(--neutral-white);
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.menu__item__link--active {
+  color: var(--very-light-purple);
 }
