@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap');
 
 :root {
   --neutral-black: #3A3335;
@@ -109,6 +109,42 @@ h2, h3 {
   text-align: center;
 }
 
+.bg-clr-white {
+  background-color: var(--neutral-white);
+}
+
+.bg-clr-black {
+  background-color: var(--neutral-black);
+}
+
+.bg-clr-light-purple {
+  background-color: var(--light-purple);
+}
+
+.bg-clr-light-purple-2 {
+  background-color: var(--light-purple-2);
+}
+
+.bg-clr-purple {
+  background-color: var(--purple);
+}
+
+.bg-clr-purple-2 {
+  background-color: var(--purple-2);
+}
+
+.clr-white {
+  color: var(--neutral-white);
+}
+
+.clr-black {
+  color: var(--neutral-black);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
 /**********/
 /* NAVBAR */
 /**********/
@@ -209,28 +245,26 @@ h2, h3 {
   color: var(--neutral-white);
 }
 
-/**************/
-/* HP SECTION */
-/**************/
+/*******************/
+/* GENERIC SECTION */
+/*******************/
 
-.hp-section {
+.grl-section {
   height: 250px;
   display: flex;
   overflow: hidden;
   position: relative;
   padding: 2rem 1rem;
-  background-color: var(--purple-2);
 }
 
-.hp-section__content {
+.grl-section__content {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: var(--neutral-white);
 }
 
-.hp-section__image {
+.grl-section__image {
   height: 225px;
   top: 50%;
   left: 90%;
@@ -238,7 +272,49 @@ h2, h3 {
   position: absolute;
 }
 
-.hp-section__button {
-  background-color: var(--neutral-black);
-  color: var(--neutral-white);
+/********************/
+/* FUNKO FAVOURITES */
+/********************/
+
+.best-sellers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.best-sellers__title {
+  color: var(--purple-2);
+  margin-bottom: 0.5rem;
+}
+
+.best-sellers__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+.best-sellers__card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.best-sellers__card__heading {
+  font-size: 1.125rem;
+  padding-inline: 0.5rem;
+}
+
+.best-sellers__card__image {
+  height: 150px;
+  margin-bottom: 0.5rem;
+  border-radius: 10rem;
+  border: var(--neutral-black) 1px solid;
+  background-color: var(--blue);
+  margin: 0.5rem;
 }
