@@ -127,10 +127,6 @@ h2 {
 /* UTILIDADES */
 /**************/
 
-.bg-img-none {
-  background-image: none;
-}
-
 .grl-button {
   padding: 0.5rem 1rem;
   border-radius: 100rem;
