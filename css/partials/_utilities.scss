@@ -1,0 +1,72 @@
+.grl-button {
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  font-family: $link-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 190px;
+  /* corrige los efectos de :hover */
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+@media (min-width: 350px) {
+  .grl-button {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .grl-button {
+    font-size: 1.15rem;
+  }
+}
+
+.grl-button--hover-black:hover {
+  background-color: $neutral-white;
+  color: $neutral-black;
+  border-color: $neutral-black;
+}
+
+.grl-button--hover-white:hover {
+  background-color: $neutral-black;
+  color: $neutral-white;
+  border-color: $neutral-white;
+}
+
+.bg-clr-white {
+  background-color: $neutral-white;
+}
+
+.bg-clr-black {
+  background-color: $neutral-black;
+}
+
+.bg-clr-light-purple {
+  background-color: $light-purple;
+}
+
+.bg-clr-light-purple-2 {
+  background-color: $light-purple-2;
+}
+
+.bg-clr-purple {
+  background-color: $purple;
+}
+
+.bg-clr-purple-2 {
+  background-color: $purple-2;
+}
+
+.clr-white {
+  color: $neutral-white;
+}
+
+.clr-black {
+  color: $neutral-black;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
