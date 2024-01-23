@@ -470,6 +470,46 @@ h2 {
   }
 }
 
+.grl-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.grl-products__title {
+  color: #564592;
+  margin-bottom: 0.5rem;
+}
+
+.grl-products__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 0.5rem;
+  padding-block: 2rem;
+}
+@media (min-width: 600px) {
+  .grl-products__cards {
+    gap: 2rem 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .grl-products__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grl-products__button {
+  background-color: #564592;
+  color: #F5EFFF;
+}
+.grl-products__button:hover {
+  background-color: #F5EFFF;
+  color: #564592;
+  border: 2px solid #564592;
+}
+
 .hero {
   position: relative;
 }
@@ -570,46 +610,6 @@ h2 {
   background-color: #F5EFFF;
   color: #A594F9;
   border: 2px solid #A594F9;
-}
-
-.best-sellers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-}
-
-.best-sellers__title {
-  color: #564592;
-  margin-bottom: 0.5rem;
-}
-
-.best-sellers__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
-  padding-block: 2rem;
-}
-@media (min-width: 600px) {
-  .best-sellers__cards {
-    gap: 1.5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .best-sellers__cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.best-sellers__button {
-  background-color: #564592;
-  color: #F5EFFF;
-}
-.best-sellers__button:hover {
-  background-color: #F5EFFF;
-  color: #564592;
-  border: 2px solid #564592;
 }
 
 .op-section {
@@ -742,4 +742,36 @@ h2 {
   .sn-description__content__title {
     font-size: 2rem;
   }
+}
+
+.products__title {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem; /* 24px */
+}
+@media (min-width: 600px) {
+  .products__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .products__title {
+    font-size: 4rem;
+  }
+}
+
+.go-store {
+  padding: 2rem 1rem 2.5rem 1rem;
+}
+
+.go-store__content {
+  max-width: 1200px;
+  margin: auto;
+}
+.go-store__content h2 {
+  padding-bottom: 2rem;
+}
+.go-store__content p {
+  padding-bottom: 2.5rem;
 }/*# sourceMappingURL=main.css.map */

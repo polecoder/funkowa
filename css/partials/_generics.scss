@@ -290,3 +290,64 @@
 //     font-size: 1rem;
 //   }
 // }
+
+//////////////////////////////
+// GENERIC PRODUCTS SECTION //
+//////////////////////////////
+
+.grl-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.grl-products__title {
+  color: $purple-2;
+  margin-bottom: 0.5rem;
+}
+
+.grl-products__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 0.5rem;
+  padding-block: 2rem;
+
+  @media (min-width: 600px) {
+    gap: 2rem 1.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// @media (min-width: 600px) {
+//   .grl-products__cards {
+//     gap: 1.5rem;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .grl-products__cards {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+// }
+
+.grl-products__button {
+  background-color: $purple-2;
+  color: $neutral-white;
+
+  &:hover {
+    background-color: $neutral-white;
+    color: $purple-2;
+    border: 2px solid $purple-2;
+  }
+}
+
+// .grl-products__button:hover {
+//   background-color: $neutral-white;
+//   color: $purple-2;
+//   border: 2px solid $purple-2;
+// }
