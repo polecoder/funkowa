@@ -70,3 +70,8 @@
 .fw-400 {
   font-weight: 400;
 }
+
+.no-animation {
+  -webkit-animation: none !important;
+  animation: none !important;
+}

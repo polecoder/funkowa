@@ -639,6 +639,246 @@ h2 {
   }
 }
 
+.sn-intro {
+  padding: 2rem 1rem;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .sn-intro {
+    padding: 8.5rem;
+  }
+}
+
+.sn-intro__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1075px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .sn-intro__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .sn-intro__cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+  }
+}
+
+.products__title {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem; /* 24px */
+}
+@media (min-width: 600px) {
+  .products__title {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .products__title {
+    font-size: 4rem;
+  }
+}
+
+.go-store {
+  padding: 2rem 1rem 2.5rem 1rem;
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.8s both;
+}
+@media (min-width: 768px) {
+  .go-store {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 5.1s both;
+  }
+}
+
+.go-store__content {
+  max-width: 1200px;
+  margin: auto;
+}
+.go-store__content h2 {
+  padding-bottom: 2rem;
+}
+.go-store__content p {
+  padding-bottom: 2.5rem;
+}
+
+.products-entry-1 {
+  animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+@media (min-width: 768px) {
+  .products-entry-1 {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+  }
+}
+
+.grl__card:nth-child(1) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.8s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(1) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.1s both;
+  }
+}
+.grl__card:nth-child(2) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(2) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+  }
+}
+.grl__card:nth-child(3) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(3) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+  }
+}
+.grl__card:nth-child(4) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(4) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
+  }
+}
+.grl__card:nth-child(5) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.6s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(5) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.9s both;
+  }
+}
+.grl__card:nth-child(6) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(6) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.1s both;
+  }
+}
+.grl__card:nth-child(7) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(7) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.3s both;
+  }
+}
+.grl__card:nth-child(8) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.2s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(8) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s both;
+  }
+}
+.grl__card:nth-child(9) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.4s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(9) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.7s both;
+  }
+}
+.grl__card:nth-child(10) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.6s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(10) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.9s both;
+  }
+}
+.grl__card:nth-child(11) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(11) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.1s both;
+  }
+}
+.grl__card:nth-child(12) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(12) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.3s both;
+  }
+}
+.grl__card:nth-child(13) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.2s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(13) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s both;
+  }
+}
+.grl__card:nth-child(14) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.4s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(14) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.7s both;
+  }
+}
+.grl__card:nth-child(15) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.6s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(15) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.9s both;
+  }
+}
+.grl__card:nth-child(16) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.8s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(16) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.1s both;
+  }
+}
+.grl__card:nth-child(17) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(17) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.3s both;
+  }
+}
+.grl__card:nth-child(18) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.2s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(18) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.5s both;
+  }
+}
+.grl__card:nth-child(19) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.4s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(19) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.7s both;
+  }
+}
+.grl__card:nth-child(20) {
+  animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.6s both;
+}
+@media (min-width: 768px) {
+  .grl__card:nth-child(20) {
+    animation: standard-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 4.9s both;
+  }
+}
+
 .hero {
   position: relative;
   animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
@@ -826,70 +1066,6 @@ h2 {
 .op-section__title {
   color: #CDC1FF;
   margin-bottom: 0.5rem;
-}
-
-.sn-intro {
-  padding: 2rem 1rem;
-  margin-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .sn-intro {
-    padding: 8.5rem;
-  }
-}
-
-.sn-intro__cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  max-width: 1075px;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  .sn-intro__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1200px) {
-  .sn-intro__cards {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1400px;
-  }
-}
-
-.products__title {
-  font-family: "Kanit", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.5rem; /* 24px */
-}
-@media (min-width: 600px) {
-  .products__title {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 768px) {
-  .products__title {
-    font-size: 4rem;
-  }
-}
-
-.go-store {
-  padding: 2rem 1rem 2.5rem 1rem;
-}
-
-.go-store__content {
-  max-width: 1200px;
-  margin: auto;
-}
-.go-store__content h2 {
-  padding-bottom: 2rem;
-}
-.go-store__content p {
-  padding-bottom: 2.5rem;
 }
 
 .dd-sections {
@@ -1196,4 +1372,8 @@ h2 {
 
 .fw-400 {
   font-weight: 400;
+}
+
+.no-animation {
+  animation: none !important;
 }/*# sourceMappingURL=main.css.map */
