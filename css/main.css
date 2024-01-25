@@ -35,6 +35,73 @@ button, select {
   text-transform: none;
 }
 
+/* Remove default margin and padding */
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Set fonts to a generic family */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+/* Reset the default styles for form controls */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* Remove inner spacing in Chrome and Safari on macOS */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-clear-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=search]::-webkit-search-inner-box {
+  margin: 0; /* Provides padding at the top and bottom of the inner search box */
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+/* Additional styles for cross-browser consistency */
+button,
+input {
+  overflow: visible; /* Remove the default styles in Internet Explorer */
+}
+
+/* Normalize the line-height */
+button,
+select {
+  text-transform: none;
+}
+
+/* Remove the default button styling in Firefox */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -242,6 +309,12 @@ h2 {
   }
 }
 
+@media (min-width: 1200px) {
+  .grl-section--oneliner {
+    height: 450px;
+  }
+}
+
 .grl-section__container {
   height: 100%;
   display: flex;
@@ -252,6 +325,13 @@ h2 {
 @media (min-width: 768px) {
   .grl-section__container {
     max-width: 600px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grl-section__container--oneliner {
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -441,6 +521,58 @@ h2 {
   border: 2px solid #564592;
 }
 
+.groot-card {
+  padding: 2rem;
+  background-color: #3A3335;
+  color: #F5EFFF;
+  position: relative;
+}
+
+.groot-card__image {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .groot-card__image {
+    height: 300px;
+    top: -5%;
+  }
+}
+
+.groot-card__content {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #A594F9;
+  box-shadow: 9px 9px 0 #000000;
+  position: relative;
+  z-index: 1;
+  color: #3A3335;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .groot-card__content {
+    padding: 2rem 7.5rem;
+  }
+}
+
+.groot-card__content__title {
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 400px) {
+  .groot-card__content__title {
+    font-size: 2rem;
+  }
+}
+
 .hero {
   position: relative;
 }
@@ -623,58 +755,6 @@ h2 {
   }
 }
 
-.sn-description {
-  padding: 2rem;
-  background-color: #3A3335;
-  color: #F5EFFF;
-  position: relative;
-}
-
-.sn-description__image {
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
-@media (min-width: 768px) {
-  .sn-description__image {
-    height: 300px;
-    top: -5%;
-  }
-}
-
-.sn-description__content {
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
-  background-color: #A594F9;
-  box-shadow: 9px 9px 0 #000000;
-  position: relative;
-  z-index: 1;
-  color: #3A3335;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .sn-description__content {
-    padding: 2rem 7.5rem;
-  }
-}
-
-.sn-description__content__title {
-  font-family: "Kanit", sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-@media (min-width: 400px) {
-  .sn-description__content__title {
-    font-size: 2rem;
-  }
-}
-
 .products__title {
   font-family: "Kanit", sans-serif;
   text-transform: uppercase;
@@ -738,6 +818,12 @@ h2 {
 @media (min-width: 600px) {
   .dd-section__duo {
     width: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dd-section__duo--oneliner {
+    width: 325px;
   }
 }
 
@@ -883,6 +969,53 @@ h2 {
   .special-promo__figures__image:nth-child(4) {
     left: 90%;
   }
+}
+
+.contact-us {
+  margin-top: 7.5rem;
+}
+@media (min-width: 768px) {
+  .contact-us {
+    margin-top: 11.5rem;
+  }
+}
+
+.contact-us__title {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.form__content {
+  max-width: 1200px;
+}
+
+.form__content__container {
+  max-width: 750px;
+  margin: auto;
+}
+
+.contact-us__form__field {
+  width: 100%;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #F5EFFF;
+  font-family: "Playfair Display", serif;
+}
+.contact-us__form__field:focus {
+  outline: solid 1px #3A3335;
+}
+.contact-us__form__field::-moz-placeholder {
+  color: #3A3335;
+  opacity: 0.5;
+  font-family: "Playfair Display", serif;
+}
+.contact-us__form__field::placeholder {
+  color: #3A3335;
+  opacity: 0.5;
+  font-family: "Playfair Display", serif;
 }
 
 .grl-button {

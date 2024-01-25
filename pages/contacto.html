@@ -37,47 +37,15 @@
       </div>
     </div>
   </nav>
-  <section>
-    <h1>Contacto</h1>
-    <div>
-      <div>
-        <i class="bi bi-instagram"></i>
-        <p>Lorem, ipsum dolor.</p>
-      </div>
-      <div>
-        <i class="bi bi-whatsapp"></i>
-        <p>Lorem, ipsum dolor.</p>
-      </div>
-      <div>
-        <i class="bi bi-telephone"></i>
-        <p>Lorem, ipsum dolor.</p>
-      </div>
-      <div>
-        <i class="bi bi-geo-alt"></i>
-        <p>Lorem, ipsum dolor.</p>
-      </div>
-    </div>
-  </section>
-  <main>
-    <form action="">
-      <h2>Envianos un mensaje</h2>
-      <div>
-        <label for="form_name">Nombre</label>
-        <input id="form_name" type="text" required>
-      </div>
-      <div>
-        <label for="form_email">E-mail</label>
-        <input id="form_email" type="email" required>
-      </div>
-      <div>
-        <label for="form_message">Mensaje</label>
-        <textarea id="form_message" cols="30" rows="10" required></textarea>
-      </div>
-      <div>
-        <input type="submit" value="Enviar">
-      </div>
-      <div>
-        <input type="reset" value="Reiniciar">
+  <main class="groot-card contact-us bg-clr-white">
+    <img class="groot-card__image" src="../img/marvel/groot-nobox-3.png" alt="Groot, de Marvel">
+    <form class="groot-card__content form__content bg-clr-light-purple-2">
+      <div class="form__content__container">
+        <h1 class="contact-us__title">Contactános</h1>
+        <input id="name" class="contact-us__form__field mb-2" placeholder="Nombre" type="text" required>
+        <input id="email" class="contact-us__form__field mb-2" placeholder="E-mail" type="email" required>
+        <textarea id="message" class="contact-us__form__field mb-2" placeholder="Mensaje" cols="30" rows="10" required></textarea>
+        <input class="grl-button grl-button--hover-white" type="submit" value="Enviar">
       </div>
     </form>
   </main>

@@ -29,6 +29,12 @@
   }
 }
 
+.dd-section__duo--oneliner {
+  @media (min-width: 1200px) {
+    width: 325px;
+  }
+}
+
 .dd-section__duo__image {
   position: absolute;
   z-index: 1;

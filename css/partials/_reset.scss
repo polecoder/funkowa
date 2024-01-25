@@ -35,6 +35,75 @@ button, select {
   text-transform: none;
 }
 
+////////////////////////////
+// RESET PARA FORMULARIOS //
+////////////////////////////
+
+/* Remove default margin and padding */
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Set fonts to a generic family */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+}
+
+/* Reset the default styles for form controls */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* Remove inner spacing in Chrome and Safari on macOS */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-clear-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type="search"]::-webkit-search-inner-box {
+  margin: 0; /* Provides padding at the top and bottom of the inner search box */
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Additional styles for cross-browser consistency */
+button,
+input {
+  overflow: visible; /* Remove the default styles in Internet Explorer */
+}
+
+/* Normalize the line-height */
+button,
+select {
+  text-transform: none;
+}
+
+/* Remove the default button styling in Firefox */
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
 //////////////
 // MI RESET //
 //////////////
