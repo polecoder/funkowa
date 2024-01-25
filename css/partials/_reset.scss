@@ -131,16 +131,12 @@ body {
   background-color: $neutral-white;
   color: $neutral-black;
   font-size: 0.8125rem; /* 13px */
-}
 
-@media (min-width: 350px) {
-  body {
+  @include breakpoint-xs {
     font-size: 1rem;
   }
-}
 
-@media (min-width: 400px) {
-  body {
+  @include breakpoint-s {
     font-size: 1.125rem;
   }
 }
@@ -154,10 +150,8 @@ h2, h3 {
 
 h2 {
   font-size: 1.5rem; /* 24px */
-}
 
-@media (min-width: 400px) {
-  h2 {
-    font-size: 2rem; /* 28px */
+  @include breakpoint-s {
+    font-size: 2rem;
   }
 }

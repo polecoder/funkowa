@@ -1,7 +1,7 @@
 .dd-sections {
   margin-top: 6rem;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     margin-top: 10rem;
   }
 }
@@ -20,17 +20,17 @@
   height: 100%;
   width: 170px;
 
-  @media (min-width: 400px) {
+  @include breakpoint-s {
     width: 200px;
   }
 
-  @media (min-width: 600px) {
+  @include breakpoint-m {
     width: 250px;
   }
 }
 
 .dd-section__duo--oneliner {
-  @media (min-width: 1200px) {
+  @include breakpoint-xl {
     width: 325px;
   }
 }
@@ -77,22 +77,22 @@
   width: 285px;
   margin: auto;
 
-  @media (min-width: 400px) {
+  @include breakpoint-s {
     height: 250px;
     width: 350px;
   }
 
-  @media (min-width: 600px) {
+  @include breakpoint-m {
     height: 350px;
     width: 500px;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     height: 450px;
     width: 600px;
   }
 
-  @media (min-width: 1200px) {
+  @include breakpoint-xl {
     width: 900px;
   }
 }
@@ -101,15 +101,15 @@
   height: 150px;
   position: absolute;
 
-  @media (min-width: 400px) {
+  @include breakpoint-s {
     height: 175px;
   }
 
-  @media (min-width: 600px) {
+  @include breakpoint-m {
     height: 250px;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     height: 325px;
   }
 
@@ -118,11 +118,11 @@
     left: 15%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 768px) {
+    @include breakpoint-l {
       top: 45%;
     }
 
-    @media (min-width: 1200px) {
+    @include breakpoint-xl {
       left: 10%;
     }
   }
@@ -133,11 +133,11 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @include breakpoint-l {
       top: 65%;
     }
 
-    @media (min-width: 1200px){
+    @include breakpoint-xl {
       left: 34%;
     }
   }
@@ -148,11 +148,11 @@
     transform: translate(-50%, -50%);
     z-index: 1;
 
-    @media (min-width: 768px) {
+    @include breakpoint-l {
       top: 65%;
     }
 
-    @media (min-width: 1200px) {
+    @include breakpoint-xl {
       left: 63%;
     }
   }
@@ -162,11 +162,11 @@
     left: 85%;
     transform: translate(-50%, -50%);
 
-    @media (min-width: 768px) {
+    @include breakpoint-l {
       top: 45%;
     }
 
-    @media (min-width: 1200px) {
+    @include breakpoint-xl {
       left: 90%;
     }
   }

@@ -1,7 +1,7 @@
 .contact-us {
   margin-top: 7.5rem;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     margin-top: 11.5rem;
   }
 }

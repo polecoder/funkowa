@@ -1,16 +1,10 @@
 .navigation {
   background-color: $neutral-black;
 
-  @media (min-width: 768px) {
-    padding-inline: 2rem 1rem; 
+  @include breakpoint-l {
+    padding-inline: 2rem 1rem;
   }
 }
-
-// @media (min-width: 768px) {
-//   .navigation {
-//     padding-inline: 2rem 1rem; 
-//   }
-// }
 
 .navigation__button {
   border: none;
@@ -33,39 +27,22 @@
     color: $light-purple-2;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     margin-right: 0;
   }
 }
 
-// .navigation__logo:hover {
-//   color: $light-purple-2;
-// }
-
-// @media (min-width: 768px) {
-//   .navigation__logo {
-//     margin-right: 0;
-//   }
-// }
-
 .navigation__menu {
   border-top: 3px solid $neutral-white;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     border-top: none;
     height: 100%;
   }
 }
 
-// @media (min-width: 768px) {
-//   .navigation__menu {
-//     border-top: none;
-//     height: 100%;
-//   }
-// }
-
-@media (min-width: 768px) {
-  .menu__items {
+.menu__items {
+  @include breakpoint-l {
     width: 100%;
     gap: 1rem;
     justify-content: end;
@@ -76,7 +53,7 @@
   border-top: 1px solid $neutral-transparent-white;
   padding: 0.75rem 1rem;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     padding: 0;
     border-top: none;
   }
@@ -85,22 +62,6 @@
     border-top: none;
   }
 }
-
-// @media (min-width: 768px) {
-//   .menu__item {
-//     padding: 0;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .menu__item {
-//     border-top: none;
-//   }
-// }
-
-// .menu__item:nth-child(1) {
-//   border-top: none;
-// }
 
 .menu__item__link {
   color: $neutral-white;
@@ -114,22 +75,11 @@
     color: $light-purple-2;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     font-size: 1rem;
     padding: 1.3rem;
   }
 }
-
-// .menu__item__link:hover {
-//   color: $light-purple-2;
-// }
-
-// @media (min-width: 768px) {
-//   .menu__item__link {
-//     font-size: 1rem;
-//     padding: 1.3rem;
-//   }
-// }
 
 .menu__item__link--active {
   color: $light-purple-2;

@@ -6,16 +6,10 @@
   padding: 2rem 1rem;
   margin-bottom: 5rem;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     padding: 8.5rem;
   }
 }
-
-// @media (min-width: 768px) {
-//   .sn-intro {
-//     margin-bottom: 8.5rem;
-//   }
-// }
 
 .sn-intro__cards {
   display: flex;
@@ -26,27 +20,13 @@
   max-width: 1075px;
   margin: auto;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media (min-width: 1200px) {
+  @include breakpoint-xl {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1400px;
   }
 }
-
-// @media (min-width: 768px) {
-//   .sn-intro__cards {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .sn-intro__cards {
-//     grid-template-columns: repeat(3, 1fr);
-//     max-width: 1400px;
-//   }
-// }

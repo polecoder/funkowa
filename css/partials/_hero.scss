@@ -10,46 +10,22 @@
   background-size: cover;
   filter: blur(2px);
 
-  @media (min-width: 400px) {
+  @include breakpoint-s {
     height: 325px;
   }
 
-  @media (min-width: 600px) {
+  @include breakpoint-m {
     height: 400px;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     height: 500px;
   }
 
-  @media (min-width: 1200px) {
+  @include breakpoint-xl {
     height: 600px;
   }
 }
-
-// @media (min-width: 400px) {
-//   .hero__bg-image {
-//     height: 325px;
-//   }
-// }
-
-// @media (min-width: 600px) {
-//   .hero__bg-image {
-//     height: 400px;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .hero__bg-image {
-//     height: 500px;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .hero__bg-image {
-//     height: 600px;
-//   }
-// }
 
 .hero__logo {
   width: 100%;
@@ -64,56 +40,26 @@
   color: $neutral-white;
   text-align: center;
 
-  @media (min-width: 350px) {
+  @include breakpoint-xs {
     font-size: 3.9rem;
   }
 
-  @media (min-width: 400px) {
+  @include breakpoint-s {
     font-size: 4.2rem;
   }
 
-  @media (min-width: 600px) {
+  @include breakpoint-m {
     font-size: 6rem;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     font-size: 8rem;
   }
 
-  @media (min-width: 1200px) {
+  @include breakpoint-xl {
     font-size: 10rem;
   }
 }
-
-// @media (min-width: 350px) {
-//   .hero__logo {
-//     font-size: 3.9rem;
-//   }
-// }
-
-// @media (min-width: 400px) {
-//   .hero__logo {
-//     font-size: 4.2rem;
-//   }
-// }
-
-// @media (min-width: 600px) {
-//   .hero__logo {
-//     font-size: 6rem;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .hero__logo {
-//     font-size: 8rem;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .hero__logo {
-//     font-size: 10rem;
-//   }
-// }
 
 .hero__content {
   width: 100%;
@@ -128,18 +74,11 @@
   margin-bottom: 1rem;
   color: $neutral-white;
 
-  @media (min-width: 768px) {
+  @include breakpoint-l {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
   }
 }
-
-// @media (min-width: 768px) {
-//   .hero__content__text {
-//     margin-bottom: 1.5rem;
-//     font-size: 1.5rem;
-//   }
-// }
 
 .hero__content__button {
   background-color: $light-purple;
@@ -151,9 +90,3 @@
     border: 2px solid $light-purple;
   }
 }
-
-// .hero__content__button:hover {
-//   background-color: $neutral-white;
-//   color: $light-purple;
-//   border: 2px solid $light-purple;
-// }

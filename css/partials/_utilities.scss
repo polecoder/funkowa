@@ -9,16 +9,12 @@
   /* corrige los efectos de :hover */
   border: 2px solid transparent;
   transition: all 0.2s;
-}
 
-@media (min-width: 350px) {
-  .grl-button {
+  @include breakpoint-xs {
     font-size: 0.95rem;
   }
-}
 
-@media (min-width: 400px) {
-  .grl-button {
+  @include breakpoint-s {
     font-size: 1.15rem;
   }
 }
