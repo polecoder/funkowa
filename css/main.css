@@ -18,6 +18,16 @@ w: http://animista.net, t: @cssanimista
     transform: translateY(0);
   }
 }
+@keyframes bottom-entry {
+  0% {
+    opacity: 0;
+    transform: translateY(1000px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes standard-entry {
   0% {
     transform: rotateX(-100deg);
@@ -26,6 +36,18 @@ w: http://animista.net, t: @cssanimista
   }
   100% {
     transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes standard-entry-absolute {
+  0% {
+    transform: rotateX(-100deg) translate(-50%, -50%);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg) translate(-50%, -50%);
     transform-origin: top;
     opacity: 1;
   }
@@ -1128,6 +1150,12 @@ h2 {
 .special-promo {
   padding: 2rem 1rem;
   overflow: hidden;
+  animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s both;
+}
+@media (min-width: 768px) {
+  .special-promo {
+    animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.5s both;
+  }
 }
 
 .special-promo__content {
@@ -1249,6 +1277,51 @@ h2 {
 @media (min-width: 1200px) {
   .special-promo__figures__image:nth-child(4) {
     left: 90%;
+  }
+}
+
+.promos-entry-1 {
+  animation: standard-entry-absolute 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s both;
+}
+@media (min-width: 768px) {
+  .promos-entry-1 {
+    animation: standard-entry-absolute 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.9s both;
+  }
+}
+
+.promos-entry-2 {
+  animation: bottom-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@media (min-width: 768px) {
+  .promos-entry-2 {
+    animation: bottom-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+  }
+}
+
+.promos-entry-3 {
+  animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.1s both;
+}
+@media (min-width: 768px) {
+  .promos-entry-3 {
+    animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.6s both;
+  }
+}
+
+.promos-entry-4 {
+  animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s both;
+}
+@media (min-width: 768px) {
+  .promos-entry-4 {
+    animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.9s both;
+  }
+}
+
+.promos-entry-5 {
+  animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.7s both;
+}
+@media (min-width: 768px) {
+  .promos-entry-5 {
+    animation: standard-entry 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.2s both;
   }
 }
 
