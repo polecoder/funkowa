@@ -693,6 +693,24 @@ h2 {
   }
 }
 
+.sn-entry-1 {
+  animation: standard-entry-absolute 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.7s both;
+}
+@media (min-width: 768px) {
+  .sn-entry-1 {
+    animation: standard-entry-absolute 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.2s both;
+  }
+}
+
+.sn-entry-2 {
+  animation: bottom-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+}
+@media (min-width: 768px) {
+  .sn-entry-2 {
+    animation: bottom-entry 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
+  }
+}
+
 .products__title {
   font-family: "Kanit", sans-serif;
   text-transform: uppercase;

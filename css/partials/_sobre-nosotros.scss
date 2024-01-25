@@ -30,3 +30,27 @@
     max-width: 1400px;
   }
 }
+
+////////////////
+// ANIMATIONS //
+////////////////
+
+.sn-entry-1 {
+  -webkit-animation: standard-entry-absolute 0.5s $ease-out-back 1.7s both;
+  animation: standard-entry-absolute 0.5s $ease-out-back 1.7s both;
+
+  @include breakpoint-l {
+    -webkit-animation: standard-entry-absolute 0.5s $ease-out-back 2.2s both;
+    animation: standard-entry-absolute 0.5s $ease-out-back 2.2s both;
+  }
+}
+
+.sn-entry-2 {
+  -webkit-animation: bottom-entry 0.5s $ease-out-quad 1.3s both;
+  animation: bottom-entry 0.5s $ease-out-quad 1.3s both;
+
+  @include breakpoint-l {
+    -webkit-animation: bottom-entry 0.5s $ease-out-quad 1.8s both;
+    animation: bottom-entry 0.5s $ease-out-quad 1.8s both;
+  }
+}
