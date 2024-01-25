@@ -1,0 +1,167 @@
+.dd-sections {
+  margin-top: 6rem;
+
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+  }
+}
+
+.dd-sections__intro__title {
+  margin-bottom: 1rem;
+}
+
+.dd-section__content {
+  width: 40%;
+  height: 175px;
+}
+
+.dd-section__duo {
+  position: relative;
+  height: 100%;
+  width: 170px;
+
+  @media (min-width: 400px) {
+    width: 200px;
+  }
+
+  @media (min-width: 600px) {
+    width: 250px;
+  }
+}
+
+.dd-section__duo__image {
+  position: absolute;
+  z-index: 1;
+}
+
+.dd-section__duo__image--first {
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.dd-section__duo__image--second {
+  top: 55%;
+  left: -20%;
+  transform: translate(50%, -50%);
+}
+
+///////////////////
+// SPECIAL PROMO //
+///////////////////
+
+.special-promo {
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.special-promo__content {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.special-promo__content__title {
+  margin-bottom: 1rem;
+}
+
+.special-promo__figures {
+  position: relative;
+  height: 200px;
+  width: 285px;
+  margin: auto;
+
+  @media (min-width: 400px) {
+    height: 250px;
+    width: 350px;
+  }
+
+  @media (min-width: 600px) {
+    height: 350px;
+    width: 500px;
+  }
+
+  @media (min-width: 768px) {
+    height: 450px;
+    width: 600px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 900px;
+  }
+}
+
+.special-promo__figures__image {
+  height: 150px;
+  position: absolute;
+
+  @media (min-width: 400px) {
+    height: 175px;
+  }
+
+  @media (min-width: 600px) {
+    height: 250px;
+  }
+
+  @media (min-width: 768px) {
+    height: 325px;
+  }
+
+  &:nth-child(1) {
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 768px) {
+      top: 45%;
+    }
+
+    @media (min-width: 1200px) {
+      left: 10%;
+    }
+  }
+
+  &:nth-child(2) {
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      top: 65%;
+    }
+
+    @media (min-width: 1200px){
+      left: 34%;
+    }
+  }
+
+  &:nth-child(3) {
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      top: 65%;
+    }
+
+    @media (min-width: 1200px) {
+      left: 63%;
+    }
+  }
+
+  &:nth-child(4) {
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 768px) {
+      top: 45%;
+    }
+
+    @media (min-width: 1200px) {
+      left: 90%;
+    }
+  }
+}

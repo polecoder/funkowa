@@ -5,6 +5,7 @@
 @media (min-width: 1200px) {
   .grl-sections {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -41,11 +42,12 @@
 .grl-section__container {
   height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 
   @media (min-width: 768px) {
-    width: 600px;
+    max-width: 600px;
     margin: auto;
   }
 }

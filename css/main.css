@@ -82,77 +82,6 @@ h2 {
     font-size: 2rem; /* 28px */
   }
 }
-.grl-button {
-  padding: 0.5rem 1rem;
-  border-radius: 100rem;
-  font-family: "Quicksand", serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  max-width: 190px;
-  /* corrige los efectos de :hover */
-  border: 2px solid transparent;
-  transition: all 0.2s;
-}
-
-@media (min-width: 350px) {
-  .grl-button {
-    font-size: 0.95rem;
-  }
-}
-@media (min-width: 400px) {
-  .grl-button {
-    font-size: 1.15rem;
-  }
-}
-.grl-button--hover-black:hover {
-  background-color: #F5EFFF;
-  color: #3A3335;
-  border-color: #3A3335;
-}
-
-.grl-button--hover-white:hover {
-  background-color: #3A3335;
-  color: #F5EFFF;
-  border-color: #F5EFFF;
-}
-
-.bg-clr-white {
-  background-color: #F5EFFF;
-}
-
-.bg-clr-black {
-  background-color: #3A3335;
-}
-
-.bg-clr-light-purple {
-  background-color: #A594F9;
-}
-
-.bg-clr-light-purple-2 {
-  background-color: #CDC1FF;
-}
-
-.bg-clr-purple {
-  background-color: #724CF9;
-}
-
-.bg-clr-purple-2 {
-  background-color: #564592;
-}
-
-.clr-white {
-  color: #F5EFFF;
-}
-
-.clr-black {
-  color: #3A3335;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
 .navigation {
   background-color: #3A3335;
 }
@@ -292,6 +221,7 @@ h2 {
 @media (min-width: 1200px) {
   .grl-sections {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 .grl-section {
@@ -315,12 +245,13 @@ h2 {
 .grl-section__container {
   height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
 }
 @media (min-width: 768px) {
   .grl-section__container {
-    width: 600px;
+    max-width: 600px;
     margin: auto;
   }
 }
@@ -516,7 +447,7 @@ h2 {
 
 .hero__bg-image {
   height: 275px;
-  background-image: url("../img/groot/groot-background.jpg");
+  background-image: url("../img/groot-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -774,4 +705,257 @@ h2 {
 }
 .go-store__content p {
   padding-bottom: 2.5rem;
+}
+
+.dd-sections {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .dd-sections {
+    margin-top: 10rem;
+  }
+}
+
+.dd-sections__intro__title {
+  margin-bottom: 1rem;
+}
+
+.dd-section__content {
+  width: 40%;
+  height: 175px;
+}
+
+.dd-section__duo {
+  position: relative;
+  height: 100%;
+  width: 170px;
+}
+@media (min-width: 400px) {
+  .dd-section__duo {
+    width: 200px;
+  }
+}
+@media (min-width: 600px) {
+  .dd-section__duo {
+    width: 250px;
+  }
+}
+
+.dd-section__duo__image {
+  position: absolute;
+  z-index: 1;
+}
+
+.dd-section__duo__image--first {
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.dd-section__duo__image--second {
+  top: 55%;
+  left: -20%;
+  transform: translate(50%, -50%);
+}
+
+.special-promo {
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.special-promo__content {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+.special-promo__content__title {
+  margin-bottom: 1rem;
+}
+
+.special-promo__figures {
+  position: relative;
+  height: 200px;
+  width: 285px;
+  margin: auto;
+}
+@media (min-width: 400px) {
+  .special-promo__figures {
+    height: 250px;
+    width: 350px;
+  }
+}
+@media (min-width: 600px) {
+  .special-promo__figures {
+    height: 350px;
+    width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .special-promo__figures {
+    height: 450px;
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .special-promo__figures {
+    width: 900px;
+  }
+}
+
+.special-promo__figures__image {
+  height: 150px;
+  position: absolute;
+}
+@media (min-width: 400px) {
+  .special-promo__figures__image {
+    height: 175px;
+  }
+}
+@media (min-width: 600px) {
+  .special-promo__figures__image {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .special-promo__figures__image {
+    height: 325px;
+  }
+}
+.special-promo__figures__image:nth-child(1) {
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .special-promo__figures__image:nth-child(1) {
+    top: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  .special-promo__figures__image:nth-child(1) {
+    left: 10%;
+  }
+}
+.special-promo__figures__image:nth-child(2) {
+  top: 70%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .special-promo__figures__image:nth-child(2) {
+    top: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  .special-promo__figures__image:nth-child(2) {
+    left: 34%;
+  }
+}
+.special-promo__figures__image:nth-child(3) {
+  top: 70%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .special-promo__figures__image:nth-child(3) {
+    top: 65%;
+  }
+}
+@media (min-width: 1200px) {
+  .special-promo__figures__image:nth-child(3) {
+    left: 63%;
+  }
+}
+.special-promo__figures__image:nth-child(4) {
+  top: 50%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) {
+  .special-promo__figures__image:nth-child(4) {
+    top: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  .special-promo__figures__image:nth-child(4) {
+    left: 90%;
+  }
+}
+
+.grl-button {
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 190px;
+  /* corrige los efectos de :hover */
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+@media (min-width: 350px) {
+  .grl-button {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 400px) {
+  .grl-button {
+    font-size: 1.15rem;
+  }
+}
+.grl-button--hover-black:hover {
+  background-color: #F5EFFF;
+  color: #3A3335;
+  border-color: #3A3335;
+}
+
+.grl-button--hover-white:hover {
+  background-color: #3A3335;
+  color: #F5EFFF;
+  border-color: #F5EFFF;
+}
+
+.bg-clr-white {
+  background-color: #F5EFFF;
+}
+
+.bg-clr-black {
+  background-color: #3A3335;
+}
+
+.bg-clr-light-purple {
+  background-color: #A594F9;
+}
+
+.bg-clr-light-purple-2 {
+  background-color: #CDC1FF;
+}
+
+.bg-clr-purple {
+  background-color: #724CF9;
+}
+
+.bg-clr-purple-2 {
+  background-color: #564592;
+}
+
+.bg-clr-blue {
+  background-color: #7371FC;
+}
+
+.clr-white {
+  color: #F5EFFF;
+}
+
+.clr-black {
+  color: #3A3335;
+}
+
+.fw-400 {
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
