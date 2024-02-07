@@ -102,9 +102,19 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  width: 225px;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include breakpoint-xs {
     height: 375px;
+  }
+
+  @include breakpoint-s {
+    width: auto;
   }
 
   @include breakpoint-m {
@@ -159,7 +169,7 @@
     font-size: 1.125rem;
   }
 
-  @include breakpoint-s {
+  @include breakpoint-m {
     font-size: 1.25rem;
     padding-inline: 1rem;
   }
@@ -203,10 +213,14 @@
 }
 
 .grl-products__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem 0.5rem;
+  
   padding-block: 2rem;
+
+  @include breakpoint-s {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
 
   @include breakpoint-m {
     gap: 2rem 1.5rem;
