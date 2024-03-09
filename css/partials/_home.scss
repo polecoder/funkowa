@@ -46,13 +46,13 @@
   transform: translate(-50%, -50%);
   padding-inline: 1rem;
   font-family: $logo-font;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 600;
   color: $neutral-white;
   text-align: center;
 
   @include breakpoint-xs {
-    font-size: 3.9rem;
+    font-size: 3.7rem;
   }
 
   @include breakpoint-s {
@@ -92,13 +92,13 @@
 }
 
 .hero__content__button {
-  background-color: $light-purple;
+  background-color: $purple-2;
   color: $neutral-white;
 
   &:hover {
     background-color: $neutral-white;
-    color: $light-purple;
-    border: 2px solid $light-purple;
+    color: $purple-2;
+    border: 2px solid $purple-2;
   }
 }
 

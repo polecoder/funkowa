@@ -983,14 +983,14 @@ h2 {
   transform: translate(-50%, -50%);
   padding-inline: 1rem;
   font-family: "Dancing Script", cursive;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 600;
   color: #F5EFFF;
   text-align: center;
 }
 @media (min-width: 350px) {
   .hero__logo {
-    font-size: 3.9rem;
+    font-size: 3.7rem;
   }
 }
 @media (min-width: 400px) {
@@ -1035,13 +1035,13 @@ h2 {
 }
 
 .hero__content__button {
-  background-color: #A594F9;
+  background-color: #564592;
   color: #F5EFFF;
 }
 .hero__content__button:hover {
   background-color: #F5EFFF;
-  color: #A594F9;
-  border: 2px solid #A594F9;
+  color: #564592;
+  border: 2px solid #564592;
 }
 
 .home-entry-1 {
