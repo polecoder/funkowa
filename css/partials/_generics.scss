@@ -147,14 +147,19 @@
 }
 
 .grl__card__icon {
-  padding: 0.25rem 0.75rem;
+  padding: 0.6125rem;
   background-color: $light-purple;
   border-radius: 100rem;
-  font-size: 2rem;
 
   @include breakpoint-m {
-    padding: 0.25rem 1rem;
-    font-size: 3rem;
+    padding: 1rem;
+  }
+
+  & svg {
+    @include breakpoint-m {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 

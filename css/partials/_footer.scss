@@ -34,11 +34,10 @@
 .footer__socials__icon {
   padding: 0.5rem;
   font-size: 1.75rem;
-  color: $neutral-black;
-  transition: all 0.2s;
 
-  &:hover {
-    color: $purple;
+  &:hover svg {
+    transition: all 0.2s;
+    fill: $purple;
   }
 }
 

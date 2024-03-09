@@ -361,11 +361,10 @@ h2 {
 .footer__socials__icon {
   padding: 0.5rem;
   font-size: 1.75rem;
-  color: #3A3335;
-  transition: all 0.2s;
 }
-.footer__socials__icon:hover {
-  color: #724CF9;
+.footer__socials__icon:hover svg {
+  transition: all 0.2s;
+  fill: #724CF9;
 }
 
 .footer__copy {
@@ -526,15 +525,19 @@ h2 {
 }
 
 .grl__card__icon {
-  padding: 0.25rem 0.75rem;
+  padding: 0.6125rem;
   background-color: #A594F9;
   border-radius: 100rem;
-  font-size: 2rem;
 }
 @media (min-width: 600px) {
   .grl__card__icon {
-    padding: 0.25rem 1rem;
-    font-size: 3rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 600px) {
+  .grl__card__icon svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
