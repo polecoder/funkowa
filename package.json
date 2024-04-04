@@ -1,0 +1,21 @@
+{
+  "name": "funkowa",
+  "version": "1.0.0",
+  "description": "Bienvenido a Funkowa, mi proyecto personal donde la imaginación y la pasión por los Funko Pops se fusionan! Este no es solo un sitio web ficticio; es la culminación de mis aprendizajes durante el curso de Desarrollo Web en Coderhouse.",
+  "scripts": {
+    "minify-css": "cleancss -o css/main.min.css css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polecoder/funkowa.git"
+  },
+  "author": "Mauro Polenta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polecoder/funkowa/issues"
+  },
+  "homepage": "https://github.com/polecoder/funkowa#readme",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3"
+  }
+}
