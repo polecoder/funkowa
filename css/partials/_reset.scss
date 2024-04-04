@@ -2,7 +2,26 @@
 // BOOTSTRAP RESET //
 /////////////////////
 
-body, figure, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, fieldset, blockquote, th, td {
+body,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
@@ -11,7 +30,8 @@ body {
   line-height: 1.5;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -20,18 +40,24 @@ table {
   border-spacing: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   margin: 0;
   font-size: 100%;
   line-height: 1.15;
   font-family: inherit;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
@@ -103,7 +129,6 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-
 //////////////
 // MI RESET //
 //////////////
@@ -136,12 +161,13 @@ body {
     font-size: 1rem;
   }
 
-  @include breakpoint-s {
+  @include breakpoint-m {
     font-size: 1.125rem;
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: $heading-font;
   text-transform: uppercase;
   font-weight: 600;
@@ -151,7 +177,7 @@ h2, h3 {
 h2 {
   font-size: 1.5rem; /* 24px */
 
-  @include breakpoint-s {
+  @include breakpoint-m {
     font-size: 2rem;
   }
 }

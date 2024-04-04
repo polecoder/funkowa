@@ -1,23 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;800&display=swap');
-
 // COLORS
-$neutral-black: #3A3335;
-$neutral-white: #F5EFFF;
+$neutral-black: #3a3335;
+$neutral-white: #f5efff;
 $neutral-transparent-white: rgba(245, 239, 255, 0.2);
-$light-purple: #A594F9;
-$light-purple-2: #CDC1FF;
-$purple: #724CF9;
+$light-purple: #a594f9;
+$light-purple-2: #cdc1ff;
+$purple: #724cf9;
 $purple-2: #564592;
-$blue: #7371FC;
+$blue: #7371fc;
 
 // FONTS
-$logo-font: 'Dancing Script', cursive;
-$main-font: 'Playfair Display', serif;
-$link-font: 'Quicksand', serif;
-$heading-font: 'Kanit', sans-serif;
+$logo-font: "Dancing Script";
+$main-font: "Playfair Display", serif;
+$heading-font: "Kanit", sans-serif;
 
 // ICONS
 $toggler-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%28245, 239, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
@@ -26,4 +20,4 @@ $next-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' view
 
 // FUNCIONES PARA TRANSICIONES
 $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$ease-out-back: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);

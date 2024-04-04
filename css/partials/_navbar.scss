@@ -52,8 +52,8 @@
 .menu__item {
   border-top: 1px solid $neutral-transparent-white;
   padding: 0.75rem 1rem;
-  -webkit-animation: top-entry 0.5s $ease-out-quad both;
-  animation: top-entry 0.5s $ease-out-quad both;
+  -webkit-animation: standard-entry 0.3s $ease-out-quad both;
+  animation: standard-entry 0.3s $ease-out-quad both;
 
   @include breakpoint-l {
     padding: 0;
@@ -62,8 +62,8 @@
 
   &:nth-child(1) {
     border-top: none;
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
 
     @include breakpoint-l {
       -webkit-animation-delay: 0.2s;
@@ -72,8 +72,8 @@
   }
 
   &:nth-child(2) {
-    -webkit-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
 
     @include breakpoint-l {
       -webkit-animation-delay: 0.3s;
@@ -92,8 +92,8 @@
   }
 
   &:nth-child(4) {
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
 
     @include breakpoint-l {
       -webkit-animation-delay: 0.5s;
@@ -102,6 +102,9 @@
   }
 
   &:nth-child(5) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+
     @include breakpoint-l {
       -webkit-animation-delay: 0.6s;
       animation-delay: 0.6s;
@@ -111,7 +114,7 @@
 
 .menu__item__link {
   color: $neutral-white;
-  font-family: $link-font;
+  font-family: $heading-font;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.2s;
