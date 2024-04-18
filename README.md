@@ -21,7 +21,10 @@ Mi meta es crear un sitio web cautivador con 5 páginas únicas, cada una repres
 
 Si te interesa contribuir a mi proyecto personal, tu feedback es invaluable! Por favor, señalá mejoras o cualquier error que encuentres, especialmente relacionado con el diseño responsive. Utiliza la sección "Issues" de este proyecto para compartir tus ideas y observaciones.
 
-Agradezco sinceramente tu tiempo y apoyo para hacer de Funkowa un proyecto aún mejor. Saludos! 👋
+## Licencia
+Distribuido bajo la Licencia MIT. Ver LICENSE para más información.
+
+Agradezco sinceramente tu tiempo y apoyo para hacer de esto un proyecto aún mejor. Saludos! 👋
 
 [scss-url]: https://sass-lang.com/
 [bootstrap-url]: https://getbootstrap.com/
